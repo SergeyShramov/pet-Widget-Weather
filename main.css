@@ -1,0 +1,114 @@
+* {
+    font-size: 17px;
+}
+body {
+    background-size: auto;
+    color: #ffffff;
+    font-family: ".SF NS Mono";
+    font-weight: 100;
+}
+#city-input {
+    background: white;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+
+}
+
+button {
+    background: #03b003;
+    border: solid;
+    height: 30px;
+    width: 90px;
+    border-radius: 9px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.wrapper {
+    width: 45%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: content-box;
+    background-color: rgba(0, 0, 205, 0.76);
+    border: yellow solid 6px;
+}
+.wrapper .search {
+    text-align: center;
+    background:none;
+    border: none;
+}
+.wrapper .search:focus{
+    outline: none;
+}
+.wrapper .widget {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .widget .city, .weather, .cloud {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    display: flex;
+    font-size: 50px;
+}
+.weather-item {
+    text-align: center;
+    font-size: 50px;
+
+}
+.weather-cloud {
+    text-align: center;}
+.city {
+    display: flex;
+    align-items: center;}
+.weather-day {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: lightslategray solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+.weather-five-day {
+    display: flex;
+}
+
+
+@media (min-width: 1116px)  {
+    .weather-day {
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+    .weather-five-day {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1116px)  {
+    .weather-day {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+    .weather-five-day {
+        flex-direction: column;
+    }
+    .wrapper #city-form {
+        width: 40%;
+        margin: auto;
+    }
+    .wrapper .widget {
+        padding: 0px;
+    }
+}
